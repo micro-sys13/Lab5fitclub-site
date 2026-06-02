@@ -2,62 +2,56 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Тренери FITCLUB — професійні наставники для індивідуальних та групових тренувань.">
+    <meta name="description" content="Тренери FITCLUB — професійні наставники для індивідуальних і групових занять.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITCLUB — Тренери</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-name">Тренери</div>
 
-<div class="page-label">Тренери</div>
+    <div class="site site-medium">
+        <header class="header" id="top">
+            <a class="logo" href="index.html" aria-label="FITCLUB головна">
+                <span class="logo-mark">F</span>
+                <span class="logo-text">FITCLUB</span>
+            </a>
 
-<div class="site-wrapper small-wrapper">
+            <nav class="nav" aria-label="Головне меню">
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="trainers.html" class="active">Тренери</a>
+                <a href="contacts.html">Контактна інформація</a>
+            </nav>
+        </header>
 
-    <header class="header" id="top">
-        <div class="logo">
-            <span class="logo-icon">F</span>
-            <span>FITCLUB</span>
-        </div>
+        <main class="content trainers-page">
+            <h1>НАШІ ТРЕНЕРИ</h1>
 
-        <nav class="nav">
-            <a href="index.html">Головна</a>
-            <a href="about.html">Про нас</a>
-            <a href="trainers.html" class="active">Тренери</a>
-            <a href="contacts.html">Контактна інформація</a>
-        </nav>
-    </header>
+            <section class="trainers-list" aria-label="Список тренерів">
+                <article class="trainer-card">
+                    <img src="img/trainer1.jpg" alt="Олена Коваль">
+                    <h2>Олена Коваль</h2>
+                </article>
 
-    <main class="content-section">
-        <h1 class="section-title">НАШІ ТРЕНЕРИ</h1>
+                <article class="trainer-card">
+                    <img src="img/trainer2.jpg" alt="Олексій Петренко">
+                    <h2>Олексій Петренко</h2>
+                </article>
 
-        <div class="trainers-grid">
+                <article class="trainer-card">
+                    <img src="img/trainer3.jpg" alt="Наталія Шевченко">
+                    <h2>Наталія Шевченко</h2>
+                </article>
 
-            <div class="trainer-card">
-                <img src="img/trainer1.jpg" alt="Тренер Олена Коваль">
-                <h2>Олена Коваль</h2>
-            </div>
+                <article class="trainer-card">
+                    <img src="img/trainer4.jpg" alt="Дмитро Бойка">
+                    <h2>Дмитро Бойка</h2>
+                </article>
+            </section>
 
-            <div class="trainer-card">
-                <img src="img/trainer2.jpg" alt="Тренер Олексій Петренко">
-                <h2>Олексій Петренко</h2>
-            </div>
-
-            <div class="trainer-card">
-                <img src="img/trainer3.jpg" alt="Тренер Наталія Шевченко">
-                <h2>Наталія Шевченко</h2>
-            </div>
-
-            <div class="trainer-card">
-                <img src="img/trainer4.jpg" alt="Тренер Дмитро Бойко">
-                <h2>Дмитро Бойко</h2>
-            </div>
-
-        </div>
-    </main>
-
-    <a href="#top" class="up-button">↑</a>
-
-</div>
-
+            <a href="#top" class="up" aria-label="Повернутися вгору">↑</a>
+        </main>
+    </div>
 </body>
 </html>

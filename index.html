@@ -2,53 +2,40 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="FITCLUB — сучасний фітнес-клуб з професійними тренерами, якісним обладнанням та індивідуальним підходом.">
+    <meta name="description" content="FITCLUB — сучасний фітнес-клуб з професійними тренерами, якісним обладнанням та дружньою атмосферою.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITCLUB — Головна</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-name">Головна</div>
 
-<div class="page-label">Головна</div>
+    <div class="site">
+        <header class="header" id="top">
+            <a class="logo" href="index.html" aria-label="FITCLUB головна">
+                <span class="logo-mark">F</span>
+                <span class="logo-text">FITCLUB</span>
+            </a>
 
-<div class="site-wrapper">
+            <nav class="nav" aria-label="Головне меню">
+                <a href="index.html" class="active">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="trainers.html">Тренери</a>
+                <a href="contacts.html">Контактна інформація</a>
+            </nav>
+        </header>
 
-    <header class="header" id="top">
-        <div class="logo">
-            <span class="logo-icon">F</span>
-            <span>FITCLUB</span>
-        </div>
+        <main class="home">
+            <section class="home-info">
+                <p><b>FITCLUB</b> — це поєднання сучасного обладнання, професійного підходу та дружньої атмосфери.</p>
+                <p>Ми пропонуємо індивідуальні та групові тренування, які допомагають покращити фізичну форму, витривалість та самопочуття.</p>
+                <p>Наші переваги — сучасні тренажери, досвідчені тренери та різноманітні програми занять, де кожен клієнт може знайти тренування для себе.</p>
+            </section>
 
-        <nav class="nav">
-            <a href="index.html" class="active">Головна</a>
-            <a href="about.html">Про нас</a>
-            <a href="trainers.html">Тренери</a>
-            <a href="contacts.html">Контактна інформація</a>
-        </nav>
-    </header>
-
-    <main class="home-section">
-        <div class="home-text">
-            <p>
-                <b>FITCLUB</b> — це поєднання сучасного обладнання,
-                професійного підходу та дружньої атмосфери. Ми пропонуємо
-                індивідуальні та групові тренування, які допомагають покращити
-                фізичну форму, витривалість та самопочуття.
-            </p>
-
-            <p>
-                Наші переваги це сучасні тренажери, досвідчені тренери та
-                різноманітні програми занять, де кожен клієнт може знайти
-                тренування для себе.
-            </p>
-        </div>
-
-        <div class="home-image">
-            <img src="img/gym-main.jpg" alt="Сучасний тренажерний зал FITCLUB">
-        </div>
-    </main>
-
-</div>
-
+            <section class="home-photo" aria-label="Фото тренажерного залу">
+                <img src="img/gym-main.jpg" alt="Тренажерний зал FITCLUB">
+            </section>
+        </main>
+    </div>
 </body>
 </html>

@@ -9,8 +9,8 @@ html {
 body {
     margin: 0;
     background: #1d1d1d;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     overflow-x: hidden;
 }
 
@@ -19,65 +19,76 @@ img {
     display: block;
 }
 
-.page-label {
-    color: #707070;
+.page-name {
+    color: #777777;
     font-size: 15px;
-    margin: 15px 0 8px 18px;
+    margin: 14px 0 8px 18px;
 }
 
-.site-wrapper {
-    width: 96%;
-    max-width: 1240px;
-    margin: 0 auto;
-    background: #32c997;
+.site {
+    width: min(1180px, calc(100% - 44px));
+    margin: 0 auto 36px auto;
+    background: #32c89a;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 
-.small-wrapper {
-    max-width: 700px;
+.site-medium {
+    max-width: 760px;
 }
 
-.contact-wrapper {
-    max-width: 860px;
+.site-contact {
+    max-width: 920px;
 }
 
 .header {
-    min-height: 125px;
-    background: #16007a;
+    min-height: 118px;
+    background: #190078;
     display: flex;
     align-items: center;
-    padding: 20px 35px;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 24px 34px;
 }
 
 .logo {
-    min-width: 230px;
+    color: #ffffff;
+    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 32px;
-    font-weight: 400;
-    letter-spacing: 1px;
+    gap: 16px;
+    flex-shrink: 0;
 }
 
-.logo-icon {
+.logo-mark {
+    font-size: 30px;
+    line-height: 1;
     font-weight: 700;
     font-style: italic;
+    transform: skew(-8deg);
+}
+
+.logo-text {
+    font-size: 34px;
+    letter-spacing: 5px;
+    font-weight: 400;
 }
 
 .nav {
-    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: flex-end;
+    gap: 42px;
+    flex-wrap: wrap;
 }
 
 .nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-size: 27px;
+    font-size: 24px;
+    line-height: 1.15;
     font-weight: 700;
-    padding: 10px 8px;
-    transition: 0.2s;
+    padding: 12px 0;
+    white-space: nowrap;
 }
 
 .nav a:hover,
@@ -85,348 +96,64 @@ img {
     color: #ff7a00;
 }
 
-.home-section {
-    display: flex;
-    min-height: 560px;
+.home {
+    display: grid;
+    grid-template-columns: 41% 59%;
+    min-height: 540px;
 }
 
-.home-text {
-    width: 40%;
-    padding: 105px 35px 30px 35px;
-    font-size: 21px;
+.home-info {
+    padding: 90px 34px 34px 34px;
+    font-size: 20px;
     line-height: 1.28;
     font-weight: 700;
 }
 
-.home-image {
-    width: 60%;
+.home-info p {
+    margin: 0 0 14px 0;
 }
 
-.home-image img {
+.home-photo img {
     width: 100%;
     height: 100%;
+    min-height: 540px;
     object-fit: cover;
 }
 
-.content-section {
-    padding: 40px 38px 55px 38px;
+.content {
+    position: relative;
+    padding: 40px 36px 58px 36px;
 }
 
-.about-image {
-    width: 78%;
-    margin: 0 auto 35px auto;
-}
-
-.about-image img {
-    width: 100%;
-    max-height: 360px;
+.wide-photo {
+    width: min(780px, 86%);
+    height: 350px;
     object-fit: cover;
+    margin: 0 auto 34px auto;
 }
 
-.about-text {
-    font-size: 19px;
-    line-height: 1.35;
+.text-block {
+    font-size: 18px;
+    line-height: 1.38;
     font-weight: 700;
 }
 
-.about-text p {
-    margin: 0 0 10px 0;
+.text-block p {
+    margin: 0 0 12px 0;
 }
 
-.section-title {
-    font-size: 27px;
-    margin: 0 0 25px 0;
-    font-weight: 700;
+.trainers-page h1 {
+    margin: 0 0 28px 0;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
-.trainers-grid {
+.trainers-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 95px;
-    row-gap: 35px;
-    padding: 0 20px;
-}
-
-.trainer-card img {
-    width: 230px;
-    height: 260px;
-    object-fit: cover;
-}
-
-.trainer-card h2 {
-    font-size: 18px;
-    margin: 10px 0 0 0;
-}
-
-.contacts-section {
-    display: flex;
-    gap: 45px;
-    padding: 30px 22px 40px 22px;
-}
-
-.contacts-info {
-    width: 43%;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.35;
-}
-
-.contacts-info h1 {
-    font-size: 18px;
-    margin: 0 0 22px 0;
-}
-
-.contacts-info a {
-    color: white;
-    text-decoration: none;
-    word-break: break-word;
-}
-
-.contacts-info a:hover {
-    color: #ff7a00;
-}
-
-.map-block {
-    width: 57%;
-}
-
-.map-block img {
-    width: 100%;
-    height: 330px;
-    object-fit: cover;
-}
-
-.up-button {
-    position: fixed;
-    right: 25px;
-    bottom: 20px;
-    width: 42px;
-    height: 42px;
-    border: 2px solid black;
-    border-radius: 50%;
-    color: black;
-    text-decoration: none;
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-
-    .site-wrapper {
-        width: 100%;
-    }
-
-    .header {
-        flex-direction: column;
-        padding: 18px 15px;
-        gap: 15px;
-    }
-
-    .logo {
-        min-width: auto;
-        font-size: 28px;
-        justify-content: center;
-    }
-
-    .nav {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-
-    .nav a {
-        font-size: 20px;
-        padding: 12px 16px;
-    }
-
-    .home-section {
-        flex-direction: column;
-    }
-
-    .home-text {
-        width: 100%;
-        padding: 25px 22px;
-        font-size: 17px;
-        order: 2;
-    }
-
-    .home-image {
-        width: 100%;
-        order: 1;
-    }
-
-    .home-image img {
-        height: auto;
-    }
-
-    .about-image {
-        width: 100%;
-    }
-
-    .about-text {
-        font-size: 16px;
-    }
-
-    .contacts-section {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .contacts-info,
-    .map-block {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-
-    .page-label {
-        font-size: 13px;
-        margin: 10px 0 6px 10px;
-    }
-
-    .header {
-        min-height: auto;
-        padding: 18px 12px;
-    }
-
-    .logo {
-        font-size: 25px;
-    }
-
-    .nav {
-        flex-direction: column;
-        width: 100%;
-        gap: 8px;
-    }
-
-    .nav a {
-        width: 100%;
-        text-align: center;
-        font-size: 17px;
-        padding: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.45);
-        border-radius: 4px;
-    }
-
-    .home-text {
-        font-size: 15px;
-        line-height: 1.45;
-        padding: 22px 18px;
-    }
-
-    .content-section {
-        padding: 25px 18px 45px 18px;
-    }
-
-    .about-image {
-        margin-bottom: 22px;
-    }
-
-    .about-text {
-        font-size: 15px;
-        line-height: 1.45;
-    }
-
-    .section-title {
-        font-size: 22px;
-        text-align: left;
-    }
-
-    .trainers-grid {
-        grid-template-columns: 1fr;
-        gap: 28px;
-        padding: 0;
-    }
-
-    .trainer-card {
-        text-align: center;
-    }
-
-    .trainer-card img {
-        width: 100%;
-        max-width: 290px;
-        height: auto;
-        margin: 0 auto;
-    }
-
-    .trainer-card h2 {
-        font-size: 17px;
-    }
-
-    .contacts-section {
-        padding: 25px 18px 40px 18px;
-    }
-
-    .contacts-info {
-        font-size: 15px;
-    }
-
-    .contacts-info h1 {
-        font-size: 17px;
-    }
-
-    .map-block img {
-        height: auto;
-    }
-
-    .up-button {
-        width: 36px;
-        height: 36px;
-        right: 14px;
-        bottom: 14px;
-        font-size: 27px;
-        line-height: 31px;
-    }
-}
-
-/* Додаткове виправлення вигляду сайту */
-
-.site-wrapper {
-    max-width: 1050px;
-}
-
-.small-wrapper {
-    max-width: 760px;
-}
-
-.header {
-    min-height: 95px;
-    padding: 18px 28px;
-    gap: 30px;
-}
-
-.logo {
-    min-width: 230px;
-    font-size: 30px;
-}
-
-.nav {
-    justify-content: flex-end;
-    gap: 32px;
-}
-
-.nav a {
-    font-size: 22px;
-    padding: 8px 0;
-    white-space: nowrap;
-}
-
-.content-section {
-    padding: 32px 38px 55px 38px;
-}
-
-.section-title {
-    font-size: 26px;
-    margin-bottom: 30px;
-}
-
-.trainers-grid {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 85px;
-    row-gap: 45px;
-    padding: 0 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 74px;
+    row-gap: 36px;
+    padding: 0 22px;
 }
 
 .trainer-card img {
@@ -436,54 +163,193 @@ img {
 }
 
 .trainer-card h2 {
+    margin: 10px 0 0 0;
+    color: #ffffff;
     font-size: 18px;
-    margin-top: 12px;
-    color: white;
+    line-height: 1.25;
+    font-weight: 700;
 }
 
-/* Щоб сайт не вилазив за ширину */
-body {
-    overflow-x: hidden;
+.contacts-page {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 32px;
+    padding: 30px 22px 42px 22px;
 }
 
-/* Мобільна версія */
-@media screen and (max-width: 576px) {
-    .site-wrapper,
-    .small-wrapper,
-    .contact-wrapper {
-        width: 100%;
-        max-width: 100%;
+.contacts-info {
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.contacts-info h1 {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+}
+
+.contacts-info p {
+    margin: 0 0 22px 0;
+}
+
+.contacts-info a {
+    color: #ffffff;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contacts-info a:hover {
+    color: #ff7a00;
+}
+
+.map img {
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+}
+
+.up {
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #111111;
+    border-radius: 50%;
+    color: #111111;
+    text-decoration: none;
+    font-size: 31px;
+    line-height: 36px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .site {
+        width: min(100%, calc(100% - 24px));
     }
 
     .header {
+        align-items: center;
         flex-direction: column;
-        padding: 18px 12px;
-        gap: 15px;
+        min-height: auto;
+        padding: 22px 18px;
+        gap: 16px;
     }
 
-    .logo {
-        min-width: auto;
-        font-size: 26px;
+    .logo-text {
+        font-size: 30px;
     }
 
     .nav {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav a {
+        font-size: 20px;
+        padding: 10px 8px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+    }
+
+    .home-photo {
+        order: 1;
+    }
+
+    .home-photo img {
+        min-height: 0;
+        height: auto;
+    }
+
+    .home-info {
+        order: 2;
+        padding: 28px 24px 34px 24px;
+        font-size: 17px;
+        line-height: 1.45;
+    }
+
+    .wide-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .contacts-page {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .page-name {
+        font-size: 13px;
+        margin: 10px 0 6px 10px;
+    }
+
+    .site,
+    .site-medium,
+    .site-contact {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .header {
+        padding: 18px 12px;
+    }
+
+    .logo-mark {
+        font-size: 24px;
+    }
+
+    .logo-text {
+        font-size: 26px;
+        letter-spacing: 4px;
+    }
+
+    .nav {
+        width: 100%;
         flex-direction: column;
         gap: 8px;
-        width: 100%;
     }
 
     .nav a {
         width: 100%;
-        text-align: center;
+        min-height: 44px;
+        border: 1px solid rgba(255, 255, 255, 0.45);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 17px;
-        padding: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 11px 8px;
+        white-space: normal;
+        text-align: center;
     }
 
-    .trainers-grid {
+    .home-info {
+        padding: 24px 18px;
+        font-size: 15px;
+    }
+
+    .content {
+        padding: 26px 18px 50px 18px;
+    }
+
+    .text-block {
+        font-size: 15px;
+        line-height: 1.48;
+    }
+
+    .trainers-page h1 {
+        font-size: 21px;
+        margin-bottom: 24px;
+    }
+
+    .trainers-list {
         grid-template-columns: 1fr;
-        padding: 0;
         gap: 30px;
+        padding: 0;
     }
 
     .trainer-card {
@@ -493,11 +359,33 @@ body {
     .trainer-card img {
         width: 100%;
         max-width: 280px;
-        height: auto;
+        height: 300px;
         margin: 0 auto;
     }
 
     .trainer-card h2 {
         font-size: 17px;
+    }
+
+    .contacts-page {
+        padding: 26px 18px 40px 18px;
+        gap: 22px;
+    }
+
+    .contacts-info {
+        font-size: 15px;
+    }
+
+    .map img {
+        height: auto;
+    }
+
+    .up {
+        width: 36px;
+        height: 36px;
+        right: 14px;
+        bottom: 14px;
+        font-size: 26px;
+        line-height: 31px;
     }
 }

@@ -2,61 +2,50 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Контактна інформація FITCLUB: телефон, email, адреса та карта розташування фітнес-клубу.">
+    <meta name="description" content="Контактна інформація FITCLUB: телефон, email, адреса та карта розташування клубу.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FITCLUB — Контактна інформація</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-name">Контактна інформація</div>
 
-<div class="page-label">Контактна інформація</div>
+    <div class="site site-contact">
+        <header class="header" id="top">
+            <a class="logo" href="index.html" aria-label="FITCLUB головна">
+                <span class="logo-mark">F</span>
+                <span class="logo-text">FITCLUB</span>
+            </a>
 
-<div class="site-wrapper contact-wrapper">
+            <nav class="nav" aria-label="Головне меню">
+                <a href="index.html">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="trainers.html">Тренери</a>
+                <a href="contacts.html" class="active">Контактна інформація</a>
+            </nav>
+        </header>
 
-    <header class="header" id="top">
-        <div class="logo">
-            <span class="logo-icon">F</span>
-            <span>FITCLUB</span>
-        </div>
+        <main class="contacts-page">
+            <section class="contacts-info">
+                <h1>Контакти для зв’язку</h1>
 
-        <nav class="nav">
-            <a href="index.html">Головна</a>
-            <a href="about.html">Про нас</a>
-            <a href="trainers.html">Тренери</a>
-            <a href="contacts.html" class="active">Контактна інформація</a>
-        </nav>
-    </header>
+                <p><span>Телефон:</span><br>
+                    <a href="tel:+38067890023">+38067890023</a>
+                </p>
 
-    <main class="contacts-section">
+                <p><span>Email:</span><br>
+                    <a href="mailto:qwerty345876655673@gmail.com">qwerty345876655673@gmail.com</a>
+                </p>
 
-        <div class="contacts-info">
-            <h1>Контакти для зв’язку</h1>
+                <p><span>Адреса:</span><br>
+                    Україна, 65078, м. Одеса, вул. Миру, 61
+                </p>
+            </section>
 
-            <p>
-                Телефон:<br>
-                <a href="tel:+38067890023">+38067890023</a>
-            </p>
-
-            <p>
-                email:<br>
-                <a href="mailto:qwerty345876655673@gmail.com">
-                    qwerty345876655673@gmail.com
-                </a>
-            </p>
-
-            <p>
-                Адреса:<br>
-                Україна, 65078, м. Одеса, вул. Миру, 61
-            </p>
-        </div>
-
-        <div class="map-block">
-            <img src="img/map.jpg" alt="Карта розташування FITCLUB">
-        </div>
-
-    </main>
-
-</div>
-
+            <section class="map" aria-label="Карта розташування FITCLUB">
+                <img src="img/map.jpg" alt="Карта розташування FITCLUB">
+            </section>
+        </main>
+    </div>
 </body>
 </html>
