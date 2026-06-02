@@ -380,3 +380,124 @@ img {
         line-height: 31px;
     }
 }
+
+/* Додаткове виправлення вигляду сайту */
+
+.site-wrapper {
+    max-width: 1050px;
+}
+
+.small-wrapper {
+    max-width: 760px;
+}
+
+.header {
+    min-height: 95px;
+    padding: 18px 28px;
+    gap: 30px;
+}
+
+.logo {
+    min-width: 230px;
+    font-size: 30px;
+}
+
+.nav {
+    justify-content: flex-end;
+    gap: 32px;
+}
+
+.nav a {
+    font-size: 22px;
+    padding: 8px 0;
+    white-space: nowrap;
+}
+
+.content-section {
+    padding: 32px 38px 55px 38px;
+}
+
+.section-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.trainers-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 85px;
+    row-gap: 45px;
+    padding: 0 28px;
+}
+
+.trainer-card img {
+    width: 230px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trainer-card h2 {
+    font-size: 18px;
+    margin-top: 12px;
+    color: white;
+}
+
+/* Щоб сайт не вилазив за ширину */
+body {
+    overflow-x: hidden;
+}
+
+/* Мобільна версія */
+@media screen and (max-width: 576px) {
+    .site-wrapper,
+    .small-wrapper,
+    .contact-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 18px 12px;
+        gap: 15px;
+    }
+
+    .logo {
+        min-width: auto;
+        font-size: 26px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .nav a {
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        padding: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .trainers-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .trainer-card {
+        text-align: center;
+    }
+
+    .trainer-card img {
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .trainer-card h2 {
+        font-size: 17px;
+    }
+}
