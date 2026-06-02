@@ -15,166 +15,166 @@ body {
 }
 
 img {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
 }
 
-.page-name {
-    color: #777777;
+.page-label {
+    color: #6f6f6f;
     font-size: 15px;
     margin: 14px 0 8px 18px;
 }
 
-.site {
-    width: min(1180px, calc(100% - 44px));
-    margin: 0 auto 36px auto;
-    background: #32c89a;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
-}
-
-.site-medium {
-    max-width: 760px;
-}
-
-.site-contact {
-    max-width: 920px;
+.site-wrapper {
+    width: min(96%, 1220px);
+    margin: 0 auto 40px auto;
+    background: #35c999;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
 }
 
 .header {
-    min-height: 118px;
-    background: #190078;
+    min-height: 126px;
+    padding: 20px 34px;
+    background: #170079;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 24px 34px;
+    gap: 38px;
 }
 
-.logo {
-    color: #ffffff;
-    text-decoration: none;
+.brand {
+    min-width: 250px;
     display: flex;
     align-items: center;
     gap: 16px;
-    flex-shrink: 0;
-}
-
-.logo-mark {
-    font-size: 30px;
-    line-height: 1;
-    font-weight: 700;
-    font-style: italic;
-    transform: skew(-8deg);
-}
-
-.logo-text {
+    color: #ffffff;
+    text-decoration: none;
     font-size: 34px;
     letter-spacing: 5px;
-    font-weight: 400;
+    line-height: 1;
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: left center;
 }
 
 .nav {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 42px;
-    flex-wrap: wrap;
+    gap: 48px;
 }
 
 .nav a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 24px;
-    line-height: 1.15;
+    font-size: 27px;
     font-weight: 700;
-    padding: 12px 0;
     white-space: nowrap;
+    transition: color 0.2s ease;
 }
 
 .nav a:hover,
 .nav a.active {
-    color: #ff7a00;
+    color: #ff7900;
 }
 
-.home {
+.home-layout {
+    min-height: 560px;
     display: grid;
-    grid-template-columns: 41% 59%;
-    min-height: 540px;
+    grid-template-columns: 40% 60%;
 }
 
 .home-info {
-    padding: 90px 34px 34px 34px;
-    font-size: 20px;
-    line-height: 1.28;
+    padding: 105px 32px 32px 32px;
+    font-size: 21px;
+    line-height: 1.32;
     font-weight: 700;
 }
 
 .home-info p {
-    margin: 0 0 14px 0;
+    margin: 0 0 16px 0;
 }
 
-.home-photo img {
+.hero-image img {
     width: 100%;
     height: 100%;
-    min-height: 540px;
+    min-height: 560px;
     object-fit: cover;
 }
 
-.content {
-    position: relative;
-    padding: 40px 36px 58px 36px;
+.content-page {
+    padding: 36px 34px 50px 34px;
 }
 
-.wide-photo {
-    width: min(780px, 86%);
-    height: 350px;
+.about-photo {
+    width: 80%;
+    max-width: 880px;
+    margin: 0 auto 35px auto;
+}
+
+.about-photo img {
+    width: 100%;
+    max-height: 360px;
     object-fit: cover;
-    margin: 0 auto 34px auto;
 }
 
-.text-block {
-    font-size: 18px;
-    line-height: 1.38;
+.text-content {
+    font-size: 19px;
+    line-height: 1.36;
     font-weight: 700;
 }
 
-.text-block p {
-    margin: 0 0 12px 0;
+.text-content p {
+    margin: 0 0 10px 0;
+}
+
+.trainers-wrapper {
+    width: min(96%, 820px);
+}
+
+.trainers-page {
+    padding: 32px 38px 58px 38px;
 }
 
 .trainers-page h1 {
-    margin: 0 0 28px 0;
-    font-size: 25px;
+    margin: 0 0 26px 0;
+    font-size: 27px;
     letter-spacing: 1px;
 }
 
-.trainers-list {
+.trainers-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 74px;
-    row-gap: 36px;
-    padding: 0 22px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 88px;
+    padding: 0 28px;
 }
 
 .trainer-card img {
-    width: 230px;
-    height: 250px;
+    width: 100%;
+    height: 270px;
     object-fit: cover;
+    object-position: center top;
 }
 
 .trainer-card h2 {
-    margin: 10px 0 0 0;
-    color: #ffffff;
+    margin: 12px 0 0 0;
     font-size: 18px;
-    line-height: 1.25;
-    font-weight: 700;
+    color: #ffffff;
 }
 
-.contacts-page {
+.contacts-wrapper {
+    width: min(96%, 880px);
+}
+
+.contacts-layout {
+    padding: 28px 20px 40px 20px;
     display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 32px;
-    padding: 30px 22px 42px 22px;
+    grid-template-columns: 42% 58%;
+    gap: 34px;
 }
 
 .contacts-info {
@@ -184,12 +184,8 @@ img {
 }
 
 .contacts-info h1 {
-    margin: 0 0 24px 0;
-    font-size: 18px;
-}
-
-.contacts-info p {
     margin: 0 0 22px 0;
+    font-size: 18px;
 }
 
 .contacts-info a {
@@ -199,16 +195,18 @@ img {
 }
 
 .contacts-info a:hover {
-    color: #ff7a00;
+    color: #ff7900;
 }
 
-.map img {
+.map-box iframe {
     width: 100%;
-    height: 325px;
-    object-fit: cover;
+    height: 330px;
+    border: 0;
+    display: block;
+    filter: saturate(0.8) brightness(1.05);
 }
 
-.up {
+.up-button {
     position: fixed;
     right: 24px;
     bottom: 20px;
@@ -223,169 +221,186 @@ img {
     text-align: center;
 }
 
-@media screen and (max-width: 900px) {
-    .site {
-        width: min(100%, calc(100% - 24px));
-    }
-
+@media screen and (max-width: 992px) {
     .header {
-        align-items: center;
-        flex-direction: column;
         min-height: auto;
-        padding: 22px 18px;
-        gap: 16px;
+        padding: 20px 22px;
+        gap: 24px;
     }
 
-    .logo-text {
-        font-size: 30px;
+    .brand {
+        min-width: 205px;
+        font-size: 29px;
+        letter-spacing: 4px;
+    }
+
+    .brand img {
+        width: 34px;
+        height: 34px;
     }
 
     .nav {
-        justify-content: center;
-        gap: 20px;
+        gap: 24px;
     }
 
     .nav a {
-        font-size: 20px;
-        padding: 10px 8px;
-    }
-
-    .home {
-        grid-template-columns: 1fr;
-    }
-
-    .home-photo {
-        order: 1;
-    }
-
-    .home-photo img {
-        min-height: 0;
-        height: auto;
+        font-size: 22px;
     }
 
     .home-info {
-        order: 2;
-        padding: 28px 24px 34px 24px;
-        font-size: 17px;
-        line-height: 1.45;
-    }
-
-    .wide-photo {
-        width: 100%;
-        height: auto;
-    }
-
-    .contacts-page {
-        grid-template-columns: 1fr;
+        font-size: 18px;
+        padding-top: 70px;
     }
 }
 
-@media screen and (max-width: 576px) {
-    .page-name {
-        font-size: 13px;
-        margin: 10px 0 6px 10px;
-    }
-
-    .site,
-    .site-medium,
-    .site-contact {
+@media screen and (max-width: 768px) {
+    .site-wrapper,
+    .trainers-wrapper,
+    .contacts-wrapper {
         width: 100%;
-        max-width: 100%;
         margin-bottom: 0;
     }
 
     .header {
-        padding: 18px 12px;
+        flex-direction: column;
+        align-items: center;
+        padding: 18px 14px;
     }
 
-    .logo-mark {
-        font-size: 24px;
-    }
-
-    .logo-text {
-        font-size: 26px;
-        letter-spacing: 4px;
+    .brand {
+        min-width: auto;
+        justify-content: center;
     }
 
     .nav {
         width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav a {
+        font-size: 18px;
+        padding: 10px 14px;
+        border: 1px solid rgba(255,255,255,0.35);
+        border-radius: 6px;
+    }
+
+    .home-layout {
+        min-height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .home-info {
+        order: 2;
+        padding: 24px 20px 30px 20px;
+        font-size: 16px;
+        line-height: 1.45;
+    }
+
+    .hero-image img {
+        min-height: auto;
+        height: auto;
+    }
+
+    .content-page,
+    .trainers-page {
+        padding: 26px 18px 44px 18px;
+    }
+
+    .about-photo {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .text-content {
+        font-size: 16px;
+        line-height: 1.45;
+    }
+
+    .trainers-grid {
+        gap: 30px;
+        padding: 0;
+    }
+
+    .contacts-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 24px 18px 38px 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .page-label {
+        margin: 10px 0 6px 10px;
+        font-size: 13px;
+    }
+
+    .brand {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    .brand img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav {
         flex-direction: column;
         gap: 8px;
     }
 
     .nav a {
         width: 100%;
-        min-height: 44px;
-        border: 1px solid rgba(255, 255, 255, 0.45);
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 17px;
-        padding: 11px 8px;
-        white-space: normal;
         text-align: center;
+        font-size: 16px;
+        padding: 12px;
     }
 
     .home-info {
-        padding: 24px 18px;
         font-size: 15px;
-    }
-
-    .content {
-        padding: 26px 18px 50px 18px;
-    }
-
-    .text-block {
-        font-size: 15px;
-        line-height: 1.48;
+        padding: 22px 17px 28px 17px;
     }
 
     .trainers-page h1 {
-        font-size: 21px;
-        margin-bottom: 24px;
+        font-size: 22px;
+        margin-bottom: 22px;
     }
 
-    .trainers-list {
+    .trainers-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 0;
-    }
-
-    .trainer-card {
-        text-align: center;
+        gap: 28px;
     }
 
     .trainer-card img {
-        width: 100%;
-        max-width: 280px;
-        height: 300px;
-        margin: 0 auto;
+        height: auto;
+        max-height: 460px;
+        object-fit: cover;
     }
 
     .trainer-card h2 {
         font-size: 17px;
     }
 
-    .contacts-page {
-        padding: 26px 18px 40px 18px;
-        gap: 22px;
-    }
-
     .contacts-info {
         font-size: 15px;
     }
 
-    .map img {
-        height: auto;
+    .map-box iframe {
+        height: 300px;
     }
 
-    .up {
+    .up-button {
         width: 36px;
         height: 36px;
         right: 14px;
         bottom: 14px;
-        font-size: 26px;
+        font-size: 27px;
         line-height: 31px;
     }
 }
