@@ -1,57 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Тренери FITCLUB — професійні наставники для індивідуальних та групових занять.">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FITCLUB — Тренери</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Тренери — FITCLUB</title>
+    <meta name="description" content="Сторінка тренерів фітнес-клубу FITCLUB з фотографіями, спеціалізаціями та короткими описами.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="page-label">Тренери</div>
-
-    <div class="site-wrapper trainers-wrapper">
-        <header class="header">
-            <a class="brand" href="index.html" aria-label="FITCLUB">
-                <img src="img/logo.png" alt="Логотип FITCLUB">
-                <span>FITCLUB</span>
-            </a>
-
-            <nav class="nav" aria-label="Головне меню">
-                <a href="index.html">Головна</a>
-                <a href="about.html">Про нас</a>
-                <a class="active" href="trainers.html">Тренери</a>
-                <a href="contacts.html">Контактна інформація</a>
-            </nav>
-        </header>
-
-        <main class="trainers-page">
-            <h1>НАШІ ТРЕНЕРИ</h1>
-
-            <section class="trainers-grid" aria-label="Список тренерів">
-                <article class="trainer-card">
-                    <img src="img/trainer-olena.png" alt="Олена Коваль">
-                    <h2>Олена Коваль</h2>
-                </article>
-
-                <article class="trainer-card">
-                    <img src="img/trainer-oleksii.png" alt="Олексій Петренко">
-                    <h2>Олексій Петренко</h2>
-                </article>
-
-                <article class="trainer-card">
-                    <img src="img/trainer-nataliia.png" alt="Наталія Шевченко">
-                    <h2>Наталія Шевченко</h2>
-                </article>
-
-                <article class="trainer-card">
-                    <img src="img/trainer-dmytro.png" alt="Дмитро Бойка">
-                    <h2>Дмитро Бойка</h2>
-                </article>
-            </section>
-        </main>
-
-        <a class="up-button" href="#top" aria-label="Повернутися вгору">↑</a>
+<header class="site-header">
+    <div class="wrapper header-inner">
+        <a class="brand" href="index.html" aria-label="FITCLUB головна сторінка"><span class="brand-mark">F</span><span>FITCLUB</span></a>
+        <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="main-nav" aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a class="active" href="trainers.html">Тренери</a></li>
+                <li><a href="contacts.html">Контактна інформація</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="wrapper">
+            <h1>Наші тренери</h1>
+            <p>Команда FITCLUB допомагає клієнтам правильно тренуватися, підтримує мотивацію та підбирає навантаження відповідно до цілей і рівня підготовки.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrapper trainers-grid">
+            <article class="trainer-card">
+                <img src="images/trainer-olena.webp" alt="Тренер Олена Коваль">
+                <div class="trainer-card-body"><h2>Олена Коваль</h2><p class="trainer-role">Фітнес та розтяжка</p><p>Допомагає клієнтам покращувати гнучкість, загальну фізичну форму та впевненість у власних силах.</p></div>
+            </article>
+            <article class="trainer-card">
+                <img src="images/trainer-oleksii.webp" alt="Тренер Олексій Петренко">
+                <div class="trainer-card-body"><h2>Олексій Петренко</h2><p class="trainer-role">Силові тренування</p><p>Працює з технікою виконання вправ, розвитком сили та створенням ефективних тренувальних програм.</p></div>
+            </article>
+            <article class="trainer-card">
+                <img src="images/trainer-nataliia.webp" alt="Тренер Наталія Шевченко">
+                <div class="trainer-card-body"><h2>Наталія Шевченко</h2><p class="trainer-role">Кардіо та функціональні заняття</p><p>Проводить заняття для розвитку витривалості, покращення координації та підтримки активного способу життя.</p></div>
+            </article>
+            <article class="trainer-card">
+                <img src="images/trainer-dmytro.webp" alt="Тренер Дмитро Бойко">
+                <div class="trainer-card-body"><h2>Дмитро Бойко</h2><p class="trainer-role">Бокс та загальна підготовка</p><p>Допомагає розвивати силу, реакцію, витривалість і впевненість через тренування з елементами боксу.</p></div>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper footer-grid">
+        <div><strong>FITCLUB</strong><p>Сучасний фітнес-клуб для тренувань, розвитку та підтримки здорового способу життя.</p></div>
+        <div><p><strong>Телефон:</strong> <a href="tel:+38067890023">+38067890023</a></p><p><strong>Email:</strong> <a href="mailto:qwerty3458766@gmail.com">qwerty3458766@gmail.com</a></p></div>
+        <div><p><strong>Адреса:</strong><br>Україна, 65078, м. Одеса, вул. Миру, 61</p></div>
+    </div>
+</footer>
+<button class="scroll-top" type="button" aria-label="Повернутися вгору">↑</button>
+<script src="js/main.js"></script>
 </body>
 </html>

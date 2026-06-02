@@ -1,51 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Контактна інформація FITCLUB: телефон, email, адреса та карта розташування фітнес-клубу.">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FITCLUB — Контактна інформація</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Контактна інформація — FITCLUB</title>
+    <meta name="description" content="Контакти фітнес-клубу FITCLUB: телефон, email, адреса та схема розташування.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="page-label">Контактна інформація</div>
-
-    <div class="site-wrapper contacts-wrapper">
-        <header class="header">
-            <a class="brand" href="index.html" aria-label="FITCLUB">
-                <img src="img/logo.png" alt="Логотип FITCLUB">
-                <span>FITCLUB</span>
-            </a>
-
-            <nav class="nav" aria-label="Головне меню">
-                <a href="index.html">Головна</a>
-                <a href="about.html">Про нас</a>
-                <a href="trainers.html">Тренери</a>
-                <a class="active" href="contacts.html">Контактна інформація</a>
-            </nav>
-        </header>
-
-        <main class="contacts-layout">
-            <section class="contacts-info">
-                <h1>Контакти для зв’язку</h1>
-
-                <p>Телефон:<br>
-                    <a href="tel:+38067890023">+38067890023</a>
-                </p>
-
-                <p>email:<br>
-                    <a href="mailto:qwerty345876655673@gmail.com">qwerty345876655673@gmail.com</a>
-                </p>
-
-                <p>Адреса:<br>
-                    Україна, 65078, г. Одеса, вул. Миру, 61
-                </p>
-            </section>
-
-            <section class="map-box" aria-label="Карта розташування">
-                <iframe title="Карта розташування FITCLUB" src="https://www.openstreetmap.org/export/embed.html?bbox=30.704%2C46.43%2C30.744%2C46.46&amp;layer=mapnik" loading="lazy"></iframe>
-            </section>
-        </main>
+<header class="site-header">
+    <div class="wrapper header-inner">
+        <a class="brand" href="index.html" aria-label="FITCLUB головна сторінка"><span class="brand-mark">F</span><span>FITCLUB</span></a>
+        <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="main-nav" aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="trainers.html">Тренери</a></li>
+                <li><a class="active" href="contacts.html">Контактна інформація</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="wrapper">
+            <h1>Контактна інформація</h1>
+            <p>Зв’яжіться з нами, щоб уточнити графік занять, умови запису або отримати консультацію щодо тренувань.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrapper contacts-layout">
+            <div class="contact-card">
+                <h2>Контакти для зв’язку</h2>
+                <p>Меню доступне з кожної сторінки, а телефон зроблений активним елементом для швидкого дзвінка зі смартфона.</p>
+                <div class="contact-list">
+                    <p><strong>Телефон:</strong><br><a href="tel:+38067890023">+38067890023</a></p>
+                    <p><strong>Email:</strong><br><a href="mailto:qwerty3458766@gmail.com">qwerty3458766@gmail.com</a></p>
+                    <p><strong>Адреса:</strong><br>Україна, 65078, м. Одеса, вул. Миру, 61</p>
+                </div>
+            </div>
+            <div class="map-panel" aria-label="Схема розташування FITCLUB">
+                <div>
+                    <div class="map-pin">📍</div>
+                    <h2>FITCLUB</h2>
+                    <p>м. Одеса, вул. Миру, 61</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper footer-grid">
+        <div><strong>FITCLUB</strong><p>Сучасний фітнес-клуб для тренувань, розвитку та підтримки здорового способу життя.</p></div>
+        <div><p><strong>Телефон:</strong> <a href="tel:+38067890023">+38067890023</a></p><p><strong>Email:</strong> <a href="mailto:qwerty3458766@gmail.com">qwerty3458766@gmail.com</a></p></div>
+        <div><p><strong>Адреса:</strong><br>Україна, 65078, м. Одеса, вул. Миру, 61</p></div>
+    </div>
+</footer>
+<button class="scroll-top" type="button" aria-label="Повернутися вгору">↑</button>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,44 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Інформація про фітнес-клуб FITCLUB, його переваги, обладнання, тренерів та атмосферу для тренувань.">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FITCLUB — Про нас</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Про нас — FITCLUB</title>
+    <meta name="description" content="Інформація про фітнес-клуб FITCLUB, команду, переваги та особливості клубу.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="page-label">Про нас</div>
-
-    <div class="site-wrapper page-long">
-        <header class="header">
-            <a class="brand" href="index.html" aria-label="FITCLUB">
-                <img src="img/logo.png" alt="Логотип FITCLUB">
-                <span>FITCLUB</span>
-            </a>
-
-            <nav class="nav" aria-label="Головне меню">
-                <a href="index.html">Головна</a>
-                <a class="active" href="about.html">Про нас</a>
-                <a href="trainers.html">Тренери</a>
-                <a href="contacts.html">Контактна інформація</a>
-            </nav>
-        </header>
-
-        <main class="content-page">
-            <div class="about-photo">
-                <img src="img/managers.png" alt="Команда FITCLUB">
-            </div>
-
-            <section class="text-content">
-                <p>Наш фітнес-клуб — це сучасний простір для тих, хто обирає здоров'я, енергію та постійний розвиток. Ми прагнули створити не просто чергове місце для тренувань, а справжнє ком'юніті, де немає місця дискомфорту.</p>
-                <p>Тут усе працює на вашу мотивацію: від продуманої зони для занять та якісного обладнання до команди, яка дійсно важлива для результату.</p>
-                <p>У просторій тренажерній зоні на вас чекає надійне обладнання для будь-яких цілей. Незалежно від того, чи ви робите перші кроки у фітнесі, чи професійно працюєте над собою, наше обладнання дозволить максимально ефективно опрацювати кожну групу м'язів.</p>
-                <p>Особлива гордість нашого клубу — це тренери-наставники. Наші професіонали мають значний досвід і завжди готові допомогти вам у досягненні поставлених цілей.</p>
-            </section>
-        </main>
-
-        <a class="up-button" href="#top" aria-label="Повернутися вгору">↑</a>
+<header class="site-header">
+    <div class="wrapper header-inner">
+        <a class="brand" href="index.html" aria-label="FITCLUB головна сторінка"><span class="brand-mark">F</span><span>FITCLUB</span></a>
+        <button class="nav-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="main-nav" aria-label="Головна навігація">
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a class="active" href="about.html">Про нас</a></li>
+                <li><a href="trainers.html">Тренери</a></li>
+                <li><a href="contacts.html">Контактна інформація</a></li>
+            </ul>
+        </nav>
     </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="wrapper">
+            <h1>Про нас</h1>
+            <p>FITCLUB — це сучасний простір для людей, які обирають здоров’я, енергію та постійний розвиток. Ми прагнемо створити не просто тренажерний зал, а комфортну спільноту для кожного клієнта.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrapper about-layout">
+            <img class="about-image" src="images/managers.webp" alt="Команда FITCLUB">
+            <div class="about-panel">
+                <h2>Наша команда</h2>
+                <p>Наш фітнес-клуб об’єднує професійних тренерів, адміністраторів та менеджерів, які працюють над тим, щоб кожен відвідувач почувався впевнено і комфортно.</p>
+                <p>Ми приділяємо увагу якості сервісу, безпеці тренувань та індивідуальному підходу до кожного клієнта. Саме тому FITCLUB підходить як новачкам, так і людям із досвідом у спорті.</p>
+                <p>Для мобільної версії сторінка побудована так, щоб зображення та текст адаптувалися до ширини екрана і не створювали горизонтального прокручування.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="wrapper">
+            <h2 class="section-title">Чим ми пишаємося</h2>
+            <p class="section-subtitle">FITCLUB створений для того, щоб тренування були доступними, зрозумілими та результативними.</p>
+            <div class="cards-grid">
+                <article class="info-card"><div class="info-icon">🎯</div><h3>Індивідуальний підхід</h3><p>Тренувальні програми підбираються з урахуванням цілей, рівня підготовки та фізичних можливостей клієнта.</p></article>
+                <article class="info-card"><div class="info-icon">✅</div><h3>Безпечні тренування</h3><p>Тренери контролюють техніку виконання вправ і допомагають уникати зайвого навантаження.</p></article>
+                <article class="info-card"><div class="info-icon">🌿</div><h3>Комфортна атмосфера</h3><p>У залі створено сучасний інтер’єр, зручне зонування та приємну атмосферу для регулярних тренувань.</p></article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper footer-grid">
+        <div><strong>FITCLUB</strong><p>Сучасний фітнес-клуб для тренувань, розвитку та підтримки здорового способу життя.</p></div>
+        <div><p><strong>Телефон:</strong> <a href="tel:+38067890023">+38067890023</a></p><p><strong>Email:</strong> <a href="mailto:qwerty3458766@gmail.com">qwerty3458766@gmail.com</a></p></div>
+        <div><p><strong>Адреса:</strong><br>Україна, 65078, м. Одеса, вул. Миру, 61</p></div>
+    </div>
+</footer>
+<button class="scroll-top" type="button" aria-label="Повернутися вгору">↑</button>
+<script src="js/main.js"></script>
 </body>
 </html>
